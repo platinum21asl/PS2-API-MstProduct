@@ -1,0 +1,6 @@
+@PS2_API_MstProduct_HostAddress = http://localhost:5032
+
+GET {{PS2_API_MstProduct_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

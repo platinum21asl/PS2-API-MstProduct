@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS2-API-MstProduct", "PS2-API-MstProduct\PS2-API-MstProduct.csproj", "{A1B6412F-2FA5-4F58-B76E-C2E4EFEC320F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS2-DAL", "PS2-DAL\PS2-DAL.csproj", "{B057B9FD-79C1-4F08-A446-C28CCEB51F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B6412F-2FA5-4F58-B76E-C2E4EFEC320F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B6412F-2FA5-4F58-B76E-C2E4EFEC320F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B6412F-2FA5-4F58-B76E-C2E4EFEC320F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B6412F-2FA5-4F58-B76E-C2E4EFEC320F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B057B9FD-79C1-4F08-A446-C28CCEB51F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B057B9FD-79C1-4F08-A446-C28CCEB51F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B057B9FD-79C1-4F08-A446-C28CCEB51F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B057B9FD-79C1-4F08-A446-C28CCEB51F67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE31E91F-63A1-4459-9B1C-AC41671AC6CA}
+	EndGlobalSection
+EndGlobal
