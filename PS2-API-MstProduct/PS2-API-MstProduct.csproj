@@ -19,10 +19,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Stripe.net" Version="45.14.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\PS2-DAL\PS2-DAL.csproj" />
+		<ProjectReference Include="..\PS2-BAL\PS2-BAL.csproj" />
 	</ItemGroup>
 </Project>
