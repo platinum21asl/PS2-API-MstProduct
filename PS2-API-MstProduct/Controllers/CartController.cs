@@ -26,12 +26,11 @@ namespace PS2_API_MstProduct.Controllers
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
             ShoppingCartVM = new()
             {
-                ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId,
-                includeProperties: "Product"),
+                ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId, includeProperties: "Product"),
                 OrderHeader = new()
-
             };
 
             foreach (var cart in ShoppingCartVM.ShoppingCartList)
@@ -41,6 +40,7 @@ namespace PS2_API_MstProduct.Controllers
             }
             return Json(ShoppingCartVM);
         }
+
 
         [HttpGet]
         public IActionResult Summary()
