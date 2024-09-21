@@ -25,7 +25,7 @@ namespace PS2_API_MstProduct.Controllers
         public IActionResult GetAll()
         {
             IEnumerable<Product> productsList = _unitOfWork.Product.GetAll(includeProperties: "Category");
-            return View(productsList);
+            return Json(productsList);
         }
 
         [HttpGet]
