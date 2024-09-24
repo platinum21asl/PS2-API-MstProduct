@@ -27,7 +27,7 @@ namespace PS2_API_MstProduct.Controllers
         public IActionResult GetCompanyById(int id) {
          
             Company companyObj = _unitOfWork.Company.Get(u => u.Id == id);
-            return Json(new { status = "200", message = "Success", data = companyObj });
+            return Json(companyObj);
         }
 
         [HttpPost]

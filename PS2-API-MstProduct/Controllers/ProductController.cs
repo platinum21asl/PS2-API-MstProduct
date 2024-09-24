@@ -31,8 +31,18 @@ namespace PS2_API_MstProduct.Controllers
         [HttpGet]
         public IActionResult GetProductById(int id)
         {
-            Product companyObj = _unitOfWork.Product.Get(u => u.Id == id);
-            return Json(new { status = "200", message = "Success", data = companyObj });
+            ProductVM productVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+
+            productVM.Product = _unitOfWork.Product.Get(u => u.Id == id, includeProperties: "ProductImages");
+            return Json(productVM);
         }
 
         [HttpPost]

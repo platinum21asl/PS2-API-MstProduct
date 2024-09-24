@@ -28,7 +28,7 @@ namespace PS2_API_MstProduct.Controllers
             return Json(productsList);
         }
 
-        [HttpGet]
+        [HttpGet("{productId}")]
         public IActionResult Details(int productId)
         {
             ShoppingCart cart = new()
